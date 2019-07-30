@@ -1,0 +1,31 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "online Loan Calculator ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajjubajra/loan-calculator.git"
+  },
+  "keywords": [
+    "loan",
+    "calculator"
+  ],
+  "author": "RD Bajra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajjubajra/loan-calculator/issues"
+  },
+  "homepage": "https://github.com/rajjubajra/loan-calculator#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

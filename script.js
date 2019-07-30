@@ -16,6 +16,10 @@ const principle = parseFloat(uiAmount.value);
 const calculateInterest = parseFloat(uiInterest.valule)/100/12;
 const calculateYears = parseFloat(uiYears.value)*12;
 
+//compute monthly payment
+const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+const montyly = (principal*x*calculatedInterest)/(x-1)
+
 
 
 

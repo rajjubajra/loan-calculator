@@ -44,19 +44,21 @@ button{
 
 
 .result{
-  display: none;
+  display: flex;
   flex-direction: column;
   margin: 20px;
   padding: 50px;
   border: 1px solid #ccc;
+
+  h2{
+    text-align: center;
+  }
+
+  label{
+    margin: 10px 0px 0px 8px;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
 }
 
-.result h2{
-  text-align: center;
-}
 
-.result label{
-  margin: 10px 0px 0px 8px;
-  font-weight: 100;
-  font-family: sans-serif;
-}
