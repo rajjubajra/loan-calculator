@@ -1,18 +1,28 @@
-console.log('connected');
+//listen for submit
+document.getElementById('loan-form').addEventListener('submit',calculateResults);
 
-const input = document.querySelectorAll("input");
+//calculate result
+function calculateResults(e){
+ console.log('calculateing...');
 
-console.log(input);
+//UI VARIABLES
+const uiAmount = document.getElementById('amount');
+const uiInterest = document.getElementById('interest');
+const uiYears = document.getElementById('years');
+const uiMonlyPayment = document.getElementById('monthly-payment');
+const uiTotalPayment = document.getElementById('total-payment');
+
+const principle = parseFloat(uiAmount.value);
+const calculateInterest = parseFloat(uiInterest.valule)/100/12;
+const calculateYears = parseFloat(uiYears.value)*12;
 
 
-document.addEventListener("click", function(e){
-  console.log(e);
-  console.log(e.target.id);
-  //document.getElementById("demo").innerHTML = "Hello World";
-  if(e.target.id === "input"){
-    
 
-  }
-}); 
+
+
+
+ e.preventDefault();
+}
+
 
 
