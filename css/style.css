@@ -18,6 +18,12 @@ form {
   margin: 20px;
   padding: 50px;
   border: 1px solid #ccc; }
+  form .error {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    background-color: #f87474;
+    display: none;
+    justify-content: center; }
 
 input {
   width: 250px;
@@ -36,7 +42,7 @@ button {
   margin-top: 10px; }
 
 .result {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 20px;
   padding: 50px;

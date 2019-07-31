@@ -22,6 +22,14 @@ form{
   padding: 50px;
   border: 1px solid #ccc;
 
+  .error{
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    background-color: rgb(248, 116, 116);
+    display: none;
+    justify-content: center;
+  }
+
 }
 
 input{
@@ -43,8 +51,10 @@ button{
 }
 
 
+
+
 .result{
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 20px;
   padding: 50px;
