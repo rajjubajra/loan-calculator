@@ -29,21 +29,27 @@ const totalInterest = (monthly * N) - PV;
 
 //RESULT UI VARIABLE
 const montly_payment = document.getElementById("monthly-payment");
-const total_payment = document.getElementById("total-payment");
+const total_payment  = document.getElementById("total-payment");
 const total_interest = document.getElementById("total-interest");
+const loanAmount     = document.getElementById('loan-amount');
+const interestRate   = document.getElementById('interest-rate');
+const repaymentYears = document.getElementById('repayment-years');
 
 if(isFinite(monthly)){
   document.querySelector('form').style.display = 'none';
   document.querySelector('.result').style.display = 'flex';
+  loanAmount.value = uiAmount.value;
+  interestRate.value = uiInterest.value;
+  repaymentYears.value = uiYears.value;
   montly_payment.value = monthly.toFixed(2);
   total_payment.value = totalPayment.toFixed(2);
   total_interest.value = totalInterest.toFixed(2);
+
 }else{
   console.log('no data found');
   document.querySelector('.error').style.display = 'flex';
   function clearError(){
      document.querySelector('.error').style.display = 'none';
-     //console.log('???');
    }
   setTimeout( clearError, 3000);
 }
@@ -54,10 +60,17 @@ e.preventDefault();
 
 }
 
+
+
 document.addEventListener('click', function(e){
-    if(e.target.id === 'clear'){
-      this.location.reload();
+    if(e.target.id === 'clear'){  
+      document.querySelector('form').style.display = 'block';
+      document.querySelector('.result').style.display = 'none';
+      document.getElementById('amount').value = '';
+      document.getElementById('interest').value = '';
+      document.getElementById('years').value = '';
     }
+    console.log(e);
 })
 
 

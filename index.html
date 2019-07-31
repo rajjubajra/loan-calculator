@@ -12,7 +12,7 @@
     <h1>Loan Calculator</h1>
     <div class="row">
       <form id="loan-form">
-        <div class="error">Please enter all blank field</div>
+        <div class="error">Please check posted value</div>
         <input id="amount" type="text" placeholder="Loan Amount">
         <input id="interest" type="text" placeholder="Annula Interest">
         <input id="years" type="text" placeholder="Repayment Years">
@@ -21,6 +21,14 @@
     </div>
     <div class="row">
       <div class="result">
+        <h2>Loan:</h2>
+        <label>Loan Amount</label>
+        <input type="number" id="loan-amount" disabled>
+        <label>Annual Interest Rate</label>
+        <input type="number" id="interest-rate" disabled>
+        <label>Repayment Years</label>
+        <input type="number" id="repayment-years" disabled>
+        <hr />
         <h2>Result</h2>
         <label>Monthly Payment</label>
         <input type="number" id="monthly-payment" disabled>
